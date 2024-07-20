@@ -14,5 +14,24 @@ import java.util.List;
         alunos.add(aluno);
     }
 
+    public void removerAluno(Aluno aluno) {
+        alunos.remove(aluno);
+    }
 
+
+    public List<Aluno> getAlunos() {
+        return alunos;
+    }
+
+    public void adicionarAparelho(Aparelho aparelho) {
+        aparelhos.add(aparelho);
+    }
+
+    public void removerAparelho(Aparelho aparelho) {
+        aparelhos.remove(aparelho);
+    }
+
+    public List<Aparelho> getAparelhos() {
+        return aparelhos;
+    }
 }
