@@ -55,6 +55,11 @@ import java.awt.event.ActionListener;
         aparelhosArea =  new JTextArea();
         JScrollPane aparelhosScrollPane = new JScrollPane(aparelhosArea);
 
+        JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, alunosScrollPane, aparelhosScrollPane);
+        add(splitPane, BorderLayout.CENTER);
+        add(painelAluno, BorderLayout.NORTH);
+        add(painelAparelho, BorderLayout.SOUTH);
+
 
 
 
