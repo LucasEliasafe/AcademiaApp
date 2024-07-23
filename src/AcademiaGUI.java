@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
         private JTextField idadeAlunoField;
         private JTextField aparelhosAlunoField;
         private JTextField alunosArea;
-        private JTextField nomeApartamentoField;
+        private JTextField nomeAparelhoField;
         private JTextField descricaoAparelhoField;
-        private JTextArea aparelhoArea;
+        private JTextArea aparelhosArea;
 
 
     public AcademiaGUI() {
@@ -26,16 +26,29 @@ import java.awt.event.ActionListener;
         painelAluno.add(new JLabel("Nome: "));
         nomeAlunoField = new JTextField();
         painelAluno.add(nomeAlunoField);
-        painelAluno.add(new JLabel("Idade: "));
+        painelAluno.add(new JLabel("Idade do Aluno: "));
         idadeAlunoField = new JTextField();
         painelAluno.add(idadeAlunoField);
-        painelAluno.add(new JLabel("Aparelho: "));
+        painelAluno.add(new JLabel("Aparelhos (separados por vírgula):"));
         aparelhosAlunoField = new JTextField();
         painelAluno.add(aparelhosAlunoField);
         JButton adicionarAlunoBtn = new JButton("Adicionar Aluno");
         painelAluno.add(adicionarAlunoBtn);
         JButton removerAlunoBtn = new JButton("Remover Aluno");
         painelAluno.add(removerAlunoBtn);
+
+        JPanel painelAparelho = new JPanel(new GridLayout(3,2));
+        painelAparelho.add(new JLabel("Nome do Aparelho: "));
+        nomeAparelhoField = new JTextField();
+        painelAparelho.add(nomeAparelhoField);
+        painelAparelho.add(new JLabel("Descrição do Aparelho: "));
+        descricaoAparelhoField = new JTextField();
+        painelAparelho.add(descricaoAparelhoField);
+        JButton adicionarAparelhoBtn = new JButton("Adicionar Aparelho");
+        painelAparelho.add(adicionarAparelhoBtn);
+        JButton removerAparelhoBtn = new JButton("Remover Aparelho");
+        painelAparelho.add(removerAparelhoBtn);
+
 
 
     }
