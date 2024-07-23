@@ -49,6 +49,13 @@ import java.awt.event.ActionListener;
         JButton removerAparelhoBtn = new JButton("Remover Aparelho");
         painelAparelho.add(removerAparelhoBtn);
 
+        alunosArea = new JTextField();
+        JScrollPane alunosAreaScroller = new JScrollPane(alunosArea);
+
+        aparelhosArea =  new JTextArea();
+        JScrollPane aparelhosScrollPane = new JScrollPane(aparelhosArea);
+
+
 
 
     }
